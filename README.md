@@ -29,13 +29,13 @@
 1. **Download** the repository and extract the `Pixabay_Image_64` folder.  
 2. **Run** `Pixabay.exe`.
 
-   ![Startup Screenshot](screenshots/screenshot_3.png)
+   ![Startup Screenshot](Screenshots/6.png)
 
 3. On first launch, enter your **Pixabay API key** (one-time setup).  
    If you don’t have one, click **"Get API Key"** – it will open the official [Pixabay API page](https://pixabay.com/api/docs/).  
    Log in with your Google account and copy the generated key.
 
-   ![API Key Screenshot](screenshots/screenshot_4.png)
+   ![API Key Screenshot](Screenshots/3.png)
 
 ---
 
@@ -64,8 +64,8 @@ In the **image preview panel**, you can:
 
 Downloaded images are saved into the `/Image` folder with a **timestamp-based suffix** to avoid conflicts.
 
-![Preview Screenshot](screenshots/screenshot_1.png)  
-![Batch Screenshot](screenshots/screenshot_6.png)
+![Preview Screenshot](Screenshots/1.png)  
+![Batch Screenshot](Screenshots/2.png)
 
 ---
 
