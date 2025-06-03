@@ -8,19 +8,56 @@
 [![Stars](https://img.shields.io/github/stars/Master-Cryptocom/Pixabay_Image?style=social)](https://github.com/Master-Cryptocom/Pixabay_Image/stargazers)
 [![Telegram](https://img.shields.io/badge/Contact-Telegram-blue?logo=telegram)](https://t.me/master_cryptocom)
 
-> **A fast and intuitive GUI application for searching and downloading royalty-free images from Pixabay.**  
-> Explore over **5.5 million** free photos, illustrations, and vectors with advanced filtering options.
+> **More than 5.5 million free images, illustrations, vectors, and photos — royalty-free.**  
+> This GUI application is designed for fast and efficient search and download of high-quality royalty-free images via the Pixabay API.
 
 ---
 
-## 📸 Features
+![Main UI](Screenshots/1.png)
 
-- 🔍 Powerful search interface with multilingual support  
-- 🎨 Filters by **orientation**, **dominant color**, **image type**, **category**, **dimensions**, and **sort order**
-- 🖼️ Live **preview panel** with detailed image info (author, tags, likes, views, size, downloads)
-- 📁 Batch downloading with one-click selection  
-- 🌐 Open images in browser or download directly to your device
-- 🧰 API key setup with instant access to [Pixabay API Docs](https://pixabay.com/api/docs/)
+## 🔍 Search Filters
+
+The application supports the following filtering options:
+
+- **Language** — language for the search query or tags (e.g., `"en"`, `"cs"`, `"da"`, `"de"`, `"es"`, `"fr"`, `"id"`, `"it"`, `"hu"`, `"nl"`, `"no"`, `"pl"`, `"pt"`, `"ro"`, `"sk"`, `"fi"`, `"sv"`, `"tr"`, `"vi"`, `"th"`, `"bg"`, `"ru"`, `"el"`, `"ja"`, `"ko"`, `"zh"`). Default is `en`.
+
+- **Orientation** — image orientation: `"all"`, `"horizontal"`, `"vertical"`.
+
+- **Color** — dominant color in the image:
+  `"all"`, `"grayscale"`, `"transparent"`, `"red"`, `"orange"`, `"yellow"`, `"green"`, `"turquoise"`, `"blue"`, `"lilac"`, `"pink"`, `"white"`, `"gray"`, `"black"`, `"brown"`.
+
+- **Results per page** — number of preview results displayed (from `1` to `200`).
+
+- **Image type** — content type: `"all"`, `"photo"`, `"illustration"`, `"vector"`.
+
+- **Category** — refine your search using the following categories:  
+  `"all"`, `"backgrounds"`, `"fashion"`, `"nature"`, `"science"`, `"education"`, `"feelings"`, `"health"`, `"people"`, `"religion"`, `"places"`, `"animals"`, `"industry"`, `"computer"`, `"food"`, `"sports"`, `"transportation"`, `"travel"`, `"buildings"`, `"business"`, `"music"`.
+
+- **Sort order** — how results are sorted: `"popular"`, `"latest"`.
+
+- **Min width/height** — minimum required dimensions in pixels (from `0` to `10,000`; `0` means any size is allowed).
+
+---
+
+![Preview Panel](Screenshots/2.png)
+
+## 🖼️ Preview Panel & Downloading
+
+Inside the **Preview Panel**, you can:
+
+- View detailed information about each image:
+  - **Author** — the image’s creator (you can also search by author in the main search field)
+  - **Tags** — descriptive tags, helpful for refining or exploring related content
+  - **Likes** — the number of likes (less popular images may ensure greater uniqueness)
+  - **Size** — image dimensions in pixels
+  - **Views** — number of times the image has been viewed
+  - **Downloads** — how many times the image has been downloaded
+
+- Click **"Open in Browser"** to view the image on the source site.
+
+- Click **"Download Image"** to download it directly.
+
+- For batch processing, check the **"Select All"** checkbox beneath the preview panel. After selecting images, a **"Download Selected"** button will appear. All selected content will be saved in the `/Image` folder using a **timestamp-based suffix** to prevent filename collisions.
 
 ---
 
@@ -29,43 +66,9 @@
 1. **Download** the repository and extract the `Pixabay_Image_64` folder.  
 2. **Run** `Pixabay.exe`.
 
-   ![Startup Screenshot](Screenshots/6.png)
-
 3. On first launch, enter your **Pixabay API key** (one-time setup).  
-   If you don’t have one, click **"Get API Key"** – it will open the official [Pixabay API page](https://pixabay.com/api/docs/).  
-   Log in with your Google account and copy the generated key.
-
-   ![API Key Screenshot](Screenshots/3.png)
-
----
-
-## 🧠 Filter Options
-
-| Filter           | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| **Language**     | Query/tag language (e.g. `en`, `ru`, `de`, `fr`, etc.)                      |
-| **Orientation**  | `all`, `horizontal`, `vertical`                                             |
-| **Color**        | `all`, `grayscale`, `transparent`, `red`, `blue`, `white`, etc.            |
-| **Image type**   | `all`, `photo`, `illustration`, `vector`                                   |
-| **Category**     | `all`, `nature`, `technology`, `business`, `animals`, etc.                 |
-| **Sort order**   | `popular`, `latest`                                                         |
-| **Min Width/Height** | Exact dimensions in pixels (0–10000; `0` means any size)              |
-| **Results per page** | Number of previews (1–200)                                             |
-
----
-
-## 🖼️ Preview and Download
-
-In the **image preview panel**, you can:
-- View image details: author, size, tags, likes, views, downloads
-- Open the image in your browser
-- Download the image instantly
-- Use **Select All + Download Selected** to fetch multiple images at once
-
-Downloaded images are saved into the `/Image` folder with a **timestamp-based suffix** to avoid conflicts.
-
-![Preview Screenshot](Screenshots/1.png)  
-![Batch Screenshot](Screenshots/2.png)
+   If you don’t have a key, click **"Get API Key"** — this will redirect you to the [Pixabay API Page](https://pixabay.com/api/docs/).  
+   Log in via Google and copy your API key.
 
 ---
 
@@ -73,22 +76,19 @@ Downloaded images are saved into the `/Image` folder with a **timestamp-based su
 
 - **Language:** C#
 - **Platform:** Windows 64-bit
-- **UI:** WinForms  
+- **UI:** WinForms
 - **API:** [Pixabay REST API](https://pixabay.com/api/docs/)
 
 ---
 
 ## 📄 License
 
-This project is released under the [MIT License](LICENSE).  
+This project is licensed under the [MIT License](LICENSE).  
 You are free to use, modify, and distribute this software.
 
 ---
 
 ## 📬 Contact & Support
 
-If you have suggestions, questions, or ideas — feel free to contact me on [Telegram](https://t.me/master_cryptocom)  
+If you have ideas, questions, or suggestions, feel free to contact me on [Telegram](https://t.me/master_cryptocom)  
 Made with ❤️ by **Cryptocom**
-
----
-
