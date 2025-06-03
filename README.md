@@ -66,6 +66,7 @@ Inside the **Preview Panel**, you can:
 1. **Download** the repository and extract the `Pixabay_Image_64` folder.  
 2. **Run** `Pixabay.exe`.
 
+![API](Screenshots/3.png)
 3. On first launch, enter your **Pixabay API key** (one-time setup).  
    If you don’t have a key, click **"Get API Key"** — this will redirect you to the [Pixabay API Page](https://pixabay.com/api/docs/).  
    Log in via Google and copy your API key.
